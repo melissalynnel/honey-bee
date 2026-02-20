@@ -1,0 +1,240 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://honey-bee.local/schemas/application-input.schema.json",
+  "title": "Application Input",
+  "type": "object",
+  "required": [
+    "mode",
+    "job",
+    "candidate",
+    "constraints",
+    "revision_request"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "mode": {
+      "type": "string",
+      "enum": [
+        "full_package",
+        "resume_and_cover",
+        "revise"
+      ]
+    },
+    "job": {
+      "type": "object",
+      "required": [
+        "job_id",
+        "source_url",
+        "company",
+        "role_title",
+        "location",
+        "job_description",
+        "must_have_keywords",
+        "nice_to_have_keywords"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_url": {
+          "type": "string",
+          "minLength": 1
+        },
+        "company": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role_title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "job_description": {
+          "type": "string"
+        },
+        "must_have_keywords": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "nice_to_have_keywords": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "required": [
+        "name",
+        "contact",
+        "master_resume_dataset"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contact": {
+          "type": "object",
+          "required": [
+            "email",
+            "phone",
+            "linkedin",
+            "portfolio",
+            "location"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "email": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "linkedin": {
+              "type": "string"
+            },
+            "portfolio": {
+              "type": "string"
+            },
+            "location": {
+              "type": "string"
+            }
+          }
+        },
+        "master_resume_dataset": {
+          "type": "object",
+          "required": [
+            "file_ref"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "file_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "required": [
+        "no_invented_metrics",
+        "banned_phrases",
+        "format",
+        "resume_page_limit"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "no_invented_metrics": {
+          "type": "boolean"
+        },
+        "banned_phrases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "markdown_ats"
+          ]
+        },
+        "resume_page_limit": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 2
+        }
+      }
+    },
+    "revision_request": {
+      "type": "object",
+      "required": [
+        "scope",
+        "notes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "scope": {
+          "type": "string",
+          "enum": [
+            "resume_only",
+            "cover_only",
+            "bullets_only",
+            "summary_only",
+            "keywords_only",
+            "none"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "revise"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "revision_request": {
+            "properties": {
+              "scope": {
+                "not": {
+                  "const": "none"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mode": {
+            "enum": [
+              "full_package",
+              "resume_and_cover"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "revision_request": {
+            "properties": {
+              "scope": {
+                "const": "none"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

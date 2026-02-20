@@ -1,0 +1,51 @@
+{
+  "mode": "full_package",
+  "job": {
+    "job_id": "gusto-head-of-gtm-process-tooling-sf-2026-02-20",
+    "source_url": "https://www.linkedin.com/jobs/view/head-of-gtm-process-tooling-at-gusto-4366052666",
+    "company": "Gusto",
+    "role_title": "Head of GTM Process & Tooling",
+    "location": "San Francisco Bay Area",
+    "job_description": "",
+    "must_have_keywords": [
+      "GTM operations",
+      "process design",
+      "tooling strategy",
+      "cross-functional leadership",
+      "systems thinking"
+    ],
+    "nice_to_have_keywords": [
+      "automation",
+      "operating cadence",
+      "change management",
+      "stakeholder alignment"
+    ]
+  },
+  "candidate": {
+    "name": "Melissa Leavenworth",
+    "contact": {
+      "email": "mlleavenworth@gmail.com",
+      "phone": "720-585-5238",
+      "linkedin": "https://www.linkedin.com/in/melissaleavenworth/",
+      "portfolio": "",
+      "location": "San Francisco Bay Area"
+    },
+    "master_resume_dataset": {
+      "file_ref": "memory/master_resume.md",
+      "notes": "Use as the sole source of factual claims and metrics."
+    }
+  },
+  "constraints": {
+    "no_invented_metrics": true,
+    "banned_phrases": [
+      "sits at the intersection of",
+      "scrappy"
+    ],
+    "format": "markdown_ats",
+    "resume_page_limit": 1
+  },
+  "revision_request": {
+    "scope": "none",
+    "notes": ""
+  }
+}

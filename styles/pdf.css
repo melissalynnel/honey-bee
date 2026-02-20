@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.35;
+  color: #111111;
+}
+
+h1 {
+  font-size: 18pt;
+  margin: 0 0 8px 0;
+}
+
+h2 {
+  font-size: 11pt;
+  letter-spacing: 0.04em;
+  margin: 16px 0 8px 0;
+}
+
+h3 {
+  font-size: 11pt;
+  margin: 10px 0 2px 0;
+}
+
+p {
+  margin: 0 0 8px 0;
+}
+
+.role-meta {
+  display: block;
+  font-size: 9pt;
+  color: #444444;
+  margin: 0 0 6px 0;
+}
+

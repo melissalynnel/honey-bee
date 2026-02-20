@@ -1,0 +1,51 @@
+{
+  "mode": "full_package",
+  "job": {
+    "job_id": "intuit-content-ops-quality-specialist-sf-2026-02-20",
+    "source_url": "https://jobs.intuit.com/job/san-francisco/content-operations-and-quality-specialist/27595/91416965952",
+    "company": "Intuit",
+    "role_title": "Content Operations & Quality Specialist",
+    "location": "San Francisco, CA",
+    "job_description": "",
+    "must_have_keywords": [
+      "content operations",
+      "quality systems",
+      "workflow optimization",
+      "cross-functional collaboration",
+      "process improvement"
+    ],
+    "nice_to_have_keywords": [
+      "documentation",
+      "governance",
+      "editorial standards",
+      "automation"
+    ]
+  },
+  "candidate": {
+    "name": "Melissa Leavenworth",
+    "contact": {
+      "email": "mlleavenworth@gmail.com",
+      "phone": "720-585-5238",
+      "linkedin": "https://www.linkedin.com/in/melissaleavenworth/",
+      "portfolio": "",
+      "location": "San Francisco Bay Area"
+    },
+    "master_resume_dataset": {
+      "file_ref": "memory/master_resume.md",
+      "notes": "Use as the sole source of factual claims and metrics."
+    }
+  },
+  "constraints": {
+    "no_invented_metrics": true,
+    "banned_phrases": [
+      "sits at the intersection of",
+      "scrappy"
+    ],
+    "format": "markdown_ats",
+    "resume_page_limit": 1
+  },
+  "revision_request": {
+    "scope": "none",
+    "notes": ""
+  }
+}

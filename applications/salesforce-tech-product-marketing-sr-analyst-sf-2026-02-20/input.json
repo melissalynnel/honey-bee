@@ -1,0 +1,51 @@
+{
+  "mode": "full_package",
+  "job": {
+    "job_id": "salesforce-tech-product-marketing-sr-analyst-sf-2026-02-20",
+    "source_url": "https://careers.salesforce.com/en/jobs/jr328365/technical-product-marketing-sr-analyst-developer-services/",
+    "company": "Salesforce",
+    "role_title": "Technical Product Marketing Sr Analyst",
+    "location": "San Francisco, CA",
+    "job_description": "",
+    "must_have_keywords": [
+      "technical product marketing",
+      "developer services",
+      "technical communication",
+      "product positioning",
+      "cross-functional execution"
+    ],
+    "nice_to_have_keywords": [
+      "sales enablement",
+      "narrative strategy",
+      "launch planning",
+      "market messaging"
+    ]
+  },
+  "candidate": {
+    "name": "Melissa Leavenworth",
+    "contact": {
+      "email": "mlleavenworth@gmail.com",
+      "phone": "720-585-5238",
+      "linkedin": "https://www.linkedin.com/in/melissaleavenworth/",
+      "portfolio": "",
+      "location": "San Francisco Bay Area"
+    },
+    "master_resume_dataset": {
+      "file_ref": "memory/master_resume.md",
+      "notes": "Use as the sole source of factual claims and metrics."
+    }
+  },
+  "constraints": {
+    "no_invented_metrics": true,
+    "banned_phrases": [
+      "sits at the intersection of",
+      "scrappy"
+    ],
+    "format": "markdown_ats",
+    "resume_page_limit": 1
+  },
+  "revision_request": {
+    "scope": "none",
+    "notes": ""
+  }
+}

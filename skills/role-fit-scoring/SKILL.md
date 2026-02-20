@@ -17,6 +17,7 @@ For each job record, produce:
 2. `fit_band` as `high`, `medium`, or `low`.
 3. `fit_rationale` with concise evidence bullets.
 4. `gaps` list with missing requirements.
+5. `priority_tier` as `focus`, `backup`, or `pass`.
 
 Persist these fields in each job JSON and mirror top-level results in `data/applications.csv`.
 
@@ -32,9 +33,12 @@ Persist these fields in each job JSON and mirror top-level results in `data/appl
 2. Score remaining roles with explicit evidence.
 3. Flag uncertain assumptions in `notes` rather than guessing.
 4. Rank descending by `fit_score`.
+5. Assign `priority_tier` to enforce targeted outreach over volume:
+1. `focus`: top high-fit roles with strongest evidence and clear scope
+2. `backup`: medium-fit roles worth pursuing after focus roles
+3. `pass`: low-fit or unclear roles that should not receive effort now
 
 ## Quality Rules
 1. Never invent profile facts.
 2. Never inflate scores without evidence.
 3. Keep rationale short and auditable.
-

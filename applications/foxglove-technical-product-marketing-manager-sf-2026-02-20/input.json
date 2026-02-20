@@ -1,0 +1,51 @@
+{
+  "mode": "full_package",
+  "job": {
+    "job_id": "foxglove-technical-product-marketing-manager-sf-2026-02-20",
+    "source_url": "https://www.builtinsf.com/job/technical-product-marketing-manager/8217949",
+    "company": "Foxglove",
+    "role_title": "Technical Product Marketing Manager",
+    "location": "San Francisco, CA",
+    "job_description": "",
+    "must_have_keywords": [
+      "technical product marketing",
+      "positioning",
+      "technical storytelling",
+      "cross-functional launch",
+      "GTM strategy"
+    ],
+    "nice_to_have_keywords": [
+      "developer audience",
+      "sales enablement",
+      "messaging architecture",
+      "content strategy"
+    ]
+  },
+  "candidate": {
+    "name": "Melissa Leavenworth",
+    "contact": {
+      "email": "mlleavenworth@gmail.com",
+      "phone": "720-585-5238",
+      "linkedin": "https://www.linkedin.com/in/melissaleavenworth/",
+      "portfolio": "",
+      "location": "San Francisco Bay Area"
+    },
+    "master_resume_dataset": {
+      "file_ref": "memory/master_resume.md",
+      "notes": "Use as the sole source of factual claims and metrics."
+    }
+  },
+  "constraints": {
+    "no_invented_metrics": true,
+    "banned_phrases": [
+      "sits at the intersection of",
+      "scrappy"
+    ],
+    "format": "markdown_ats",
+    "resume_page_limit": 1
+  },
+  "revision_request": {
+    "scope": "none",
+    "notes": ""
+  }
+}

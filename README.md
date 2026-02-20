@@ -1,48 +1,42 @@
-# Melissa Leavenworth | Agentic Marketing Workflow Builder
+# Honey Bee: Agentic Marketing Workflow Case Study
 
-I help founders and growth teams set up practical, high-leverage agentic workflows for marketing and GTM execution.
+This repository is a working example of how Melissa Leavenworth designs and operates agentic workflows for marketing, GTM, and content operations.
 
-If you're hiring for marketing operations, GTM systems, technical marketing, or content operations, this repo shows how I structure AI-assisted workflows end-to-end: from role intake and application pipelines to quality gates, follow-up automation, and reproducible operating systems.
+Instead of a conceptual demo, Honey Bee is a live operating system: structured skills, execution plans, quality gates, tracking tables, and production outputs (Markdown + PDF) used to run a full job-search and application pipeline.
 
-## What I Build
+## What Honey Bee Demonstrates
 
-- Agentic GTM workflows with clear guardrails
-- Repeatable content and communications systems
-- Drafting/review pipelines with factual integrity checks
-- Follow-up and outreach systems with cadence control
-- Operational memory + logging so teams can scale without chaos
+- How to translate strategy into repeatable agent workflows
+- How to enforce factual integrity and review gates in AI-assisted drafting
+- How to run follow-up operations with cadence control and anti-spam guardrails
+- How to keep one canonical tracking layer for execution and outcomes
+- How to produce submission-ready artifacts quickly and consistently
 
-## Typical Use Cases
+## System Components
 
-- Build a marketing execution engine for lean teams
-- Turn one-off campaigns into reusable systems
-- Standardize messaging workflows across functions
-- Introduce AI agents safely into day-to-day GTM operations
-- Improve throughput while reducing coordination drag
+- `PLANS.md`, `EXECPLAN.md`: execution planning and daily operating cadence
+- `skills/`: modular behavior contracts for ingest, scoring, drafting, review, follow-up, and LinkedIn contact discovery
+- `memory/`: canonical profile + resume sources used as factual ground truth
+- `data/applications.csv`: single source of truth for pipeline and follow-up status
+- `applications/<job_id>/`: role-specific packets (resume, cover letter, claim map, review, follow-up seeds, PDFs)
+- `scripts/export_pdfs.sh`: Markdown-to-PDF production workflow
 
-## Core Principles
+## Why This Matters For Hiring
 
-- Clarity reduces waste
-- Alignment prevents friction
-- Messaging is infrastructure, not decoration
-- Responsible technology matters
-- Execution matters more than aesthetics
+Honey Bee shows how Melissa works in practice:
 
-## Deliverables You Can Expect
+- Systems-first execution, not one-off output
+- Clear operator thinking under ambiguity
+- Technical-to-business translation across teams
+- Messaging and workflow infrastructure that reduces coordination drag
+- Responsible AI usage with explicit constraints and validation
 
-- Written execution plan (`PLANS.md`, `EXECPLAN.md`)
-- Skills-based workflow definitions (`skills/`)
-- Structured data and tracking layers (`data/`)
-- Canonical profile/memory system (`memory/`)
-- Review gates for quality and compliance
-- Production-ready outputs (Markdown + PDF)
+## Selected Outputs In This Repo
 
-## Engagement Style
-
-- Systems-first and outcome-focused
-- Fast iteration with clear quality controls
-- Cross-functional translation between technical and business teams
-- Practical implementation, not theory decks
+- End-to-end application packets for multiple GTM/marketing roles
+- Structured clean-view tracker for active pipeline management
+- Reusable response blocks and follow-up strategy assets
+- ATS-safe resumes and cover letters exported to finalized PDFs
 
 ## Contact
 
@@ -50,4 +44,4 @@ If you're hiring for marketing operations, GTM systems, technical marketing, or 
 - LinkedIn: [linkedin.com/in/melissaleavenworth](https://www.linkedin.com/in/melissaleavenworth/)
 - Portfolio: [melissalynnel.github.io/serenity/artemis](https://melissalynnel.github.io/serenity/artemis/)
 
-If you want help standing up agentic workflows in marketing, GTM, or content operations, reach out.
+If you are hiring someone to stand up agentic workflows in marketing or GTM, Honey Bee is the example of how Melissa builds.
